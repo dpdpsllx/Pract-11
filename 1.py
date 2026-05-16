@@ -1,9 +1,9 @@
 numbers = list(map(int, input().split()))
-
 num = int(input())
 
-# Проверяем, повторяется ли число больше одного раза
-if numbers.count(num) > 1:
+dubbles = set(x for x in numbers if numbers.count(x) > 1)
+
+if num in dubbles:
     print("YES")
 else:
     print("NO")
